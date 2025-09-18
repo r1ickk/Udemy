@@ -25,7 +25,9 @@ h3 {
   text-indent: 28px;
   /* Coloca parágrafo */
   color: gray;
-  font-variant: small-caps ;
+  font-weight: normal;
+  /* Remove o negrito da tag */
+  font-variant: small-caps;
   /* Valores principais de font-variant
 
 normal
