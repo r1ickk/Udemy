@@ -18,23 +18,34 @@ h2 {
   margin-top: 56px;
 }
 
-.destaque{
-    background-color: orange;
+.destaque {
+  background-color: orange;
 }
 
-.destaque-size{
-    width: 50%;
-    height: 100px;
+.destaque-size {
+  width: 50%;
+  height: 100px;
 }
 
-.destaque-padding{
-    padding: 26px;
+.destaque-padding {
+  padding: 26px;
 }
 
-.destaque-margin   {
-    margin: 50px 0 20px 100px;
+.destaque-margin {
+  margin: 50px 0 20px 100px;
 }
 
-.destaque-border{
+.destaque-border {
+  border: 10px solid red;
+  /* Aqui usamos as 3 propriedades do border em uma linha só
+        Border-width  -> Expessura
+        Border-style -> Estilo da borda
+        Border-color -> Cor da borda */
+  padding: 10px;
+}
 
+.destaque-outline{
+    outline: 5px dashed red;
+    /* Semelhante ao elemento border
+    Ela cria uma borda pra fora do elemento */
 }
