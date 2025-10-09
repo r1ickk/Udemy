@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+
+    <style>
+        h1{
+            border: 2px solid red;
+            width: 25%;
+        }
+
+        p{
+           background-color: #ccc;
+           width: 50%;
+        }
+
+        a{
+            background-color: yellow;
+            
+            /* Elementos de linha não recebem propriedades do Box Model */ 
+            /* Nunca utilize propriedades do Box Model em elementos de linha */
+        }
+
+        strong{
+            padding: 25px;
+            background-color: blue;
+            display: block;  /* Transforma o elemento de linha em elemento de BLOCO */
+        }
+
+       .strong2{
+            padding: 25px;
+            background-color: rgb(195, 0, 255);
+            display: inline-block;  /* Transforma o elemento de linha em elemento de BLOCO, porém agora é possível usar as propriedades do Box Model */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Propriedade Display</h1>
+
+<!-- Vem com 4 variações
+
+        Inline -  Não vão gerar quebra de linha e vãomocupar somente o espaço necessário para o cabimento do conteúdo
+        Block -  Vão ocupar todo o espaço e da tela ou container
+        Inline-block
+        None - Serve para esconder elementos na tela 
+-->
+
+
+    <p>Lorem ipsum dolor <a href="Box-sizing.html">Box model arquivo html </a> sit amet consectetur adipisicing elit. Maxime assumenda expedita cum sed provident accusamus, repudiandae quae, in, <b> texto em negrito com a tag b</b> voluptate atque voluptatum rem eligendi debitis. Similique eum aspernatur ad maiores officia fuga voluptas placeat libero debitis cumque minus esse animi, exercitationem optio! <strong>Texto em negrito com strong</strong>Voluptas minus fugiat ad dolore provident <strong class="strong2">Mais um texto em strong</strong> maiores, eaque iste, obcaecati exercitationem voluptatum architecto voluptates tempore est impedit delectus qui <em>Texto em itálico com em</em>maxime animi, deleniti recusandae blanditiis molestias consequuntur magnam quia? Odio aliquam ducimus reiciendis, accusamus distinctio unde! Beatae asperiores, culpa cumque deleniti maxime, accusamus <i>Texto em itálico em i</i> voluptate corrupti quaerat rem praesentium quibusdam necessitatibus ipsum laboriosam id?</p>
+    
+</body>
+</html>
