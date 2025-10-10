@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses em links</title>
+
+    <style>
+        /* h1{
+            font-family: sans-serif;
+        }
+
+        a{
+            font-family: sans-serif;
+        }
+
+        p{
+            font-family: sans-serif;
+        } */
+
+        /* Fazer assim é muito complicado. Podemos colocar tudo pra ser formatado de uma vez só, dá uma olhada*/
+
+        h1,
+        a,
+        p {
+            font-family: sans-serif;
+            color: red;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:hover {
+            background-color: #ccc;
+
+        }
+
+        /* Desse jeito, formatamos a forma do link original, do link após ser visitado e quando colocamos o cursor por cima dele. */
+    </style>
+</head>
+
+<body>
+
+    <!-- Temos 4 tipos de pseudoclasses:
+     
+    a:link - Estado normal de um link (não foi clidado ou visitado)
+    a:visited - Página já visitada
+    a:hover - Quando passamos o mouse por cima do link
+    a:active - Quando pressionamos o botão do mouse em cima do link -->
+
+
+
+    <h1>
+        Pseudoclasses em links
+    </h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a href="Display.html">Veja a propriedade display</a>
+        Recusandae officiis sapiente adipisci nemo rerum soluta quis explicabo velit quaerat? Consequatur nesciunt,
+        repellat <a href="Outline.html">Veja a propriedade outline</a> facilis ab dignissimos, libero mollitia dolorum
+        cupiditate eligendi quia, cumque quae possimus dolor accusamus quaerat laboriosam saepe quos accusantium culpa?
+        Iure fugiat consequatur excepturi enim commodi beatae molestiae modi dicta nobis sint, aperiam quibusdam
+        nostrum, iusto dignissimos magnam voluptates reprehenderit quaerat incidunt quisquam quam optio eum. Tempora,
+        laudantium molestiae. Minima laborum consequuntur non nam accusamus. Quam obcaecati eum mollitia dignissimos
+        modi eius quasi eligendi, laborum molestias cum alias doloremque rem inventore accusamus id. Placeat suscipit
+        quas officia est.</p>
+</body>
+
+</html>
