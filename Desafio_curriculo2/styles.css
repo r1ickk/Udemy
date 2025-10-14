@@ -21,14 +21,22 @@ body {
     display: flex;
 }
 
+.about-job{
+    font-weight: 100;
+}
+
 .about {
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
+.job{
+    color: blue;
+}
+
 h1 {
-    background-color: #777676;
+    background-color: #a1a1a1;
     color: rgb(4, 4, 85);
     border-bottom: 2px solid rgb(4, 4, 85);
     text-indent: 10px;
@@ -37,4 +45,8 @@ h1 {
 p{
     margin-top: 10px;
     font-weight: bold;
+}
+
+ul{
+    list-style-position: inside;
 }
