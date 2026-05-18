@@ -1,0 +1,26 @@
+Antes das propriedades flex, posicionávamos os itens usando position
+
+-absolute
+-relative
+-fixed
+-static
+-sticky
+-top
+-right
+-bottom
+-left
+
+Float
+
+-left
+-right
+-none
+
+Display
+
+-inline-block
+-inline
+-block
+
+O display flex dentro de um container e os filhos serão alinhados dentro do container, ou seja, eles vão ficar "soltos" aí. O display flex vai dentro do pai, e assim distribui os filhos.
+Virando assim um flex-container e os itens flex-itens.

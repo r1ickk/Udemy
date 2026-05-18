@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<style>
+    .flexbox {
+        height: 250px;
+        border: 3px solid red;
+        display: flex;
+        margin-bottom: 16px;
+        /* O display flex afeta apenas as divs dentro da div pai (div class="flexbox flex-container") */
+        /* flex-wrap: wrap; Permite que os itens sejam quebrados em várias linhas, caso necessário */
+        /* flex-direction: column; /* Altera a direção dos itens para coluna */
+        /* flex-direction: row-reverse; Altera a direção dos itens para linha reversa */
+        /* flex-direction: column-reverse; Altera a direção dos itens para coluna reversa */
+    }
+
+    .flexbox div {
+        border: 2px solid orange;
+        width: 300px;
+        margin: 15px;
+    }
+
+    .flex-container {
+        justify-content: space-around;
+        /* Alinha os itens horizontalmente, distribuindo o espaço restante de forma igual entre eles */
+        /* justify-content: flex-start; Alinha os itens no início do contêiner */
+        /* justify-content: flex-end; Alinha os itens no final do contêiner */
+        /* justify-content: center; Alinha os itens no centro do contêiner */
+        /* justify-content: space-between; Alinha os itens com espaço igual entre eles, mas sem espaço nas extremidades */
+        /* justify-content: space-evenly; Alinha os itens com espaço igual entre eles, incluindo as extremidades */
+        /* justify-content: space-around; Alinha os itens com espaço igual entre eles, incluindo as extremidades */
+
+
+        align-items: center;
+        /* Alinha os itens verticalmente ao centro do contêiner */
+        /* align-items: flex-start; Alinha os itens no início do eixo cruzado (topo) */
+        /* align-items: flex-end; Alinha os itens no final do eixo cruzado (base) */
+        /* align-items: stretch; Estica os itens para preencher o contêiner (padrão) */
+        /* align-items: center; Alinha os itens ao centro do eixo cruzado */
+        /* align-items: baseline; Alinha os itens pela sua linha de base */
+
+        align-content: center;
+        /* Alinha as linhas de itens ao centro do contêiner quando há várias linhas */
+        /* align-content: flex-start; Alinha as linhas de itens no início do contêiner */
+        /* align-content: flex-end; Alinha as linhas de itens no final do contêiner */
+        /* align-content: space-between; Distribui as linhas de itens com espaço igual entre elas, mas sem espaço nas extremidades */
+        /* align-content: space-around; Distribui as linhas de itens com espaço igual entre elas, incluindo as extremidades */
+    }
+
+    .flex-container2 div {
+        width: 30px;
+        margin: 0;
+    }
+
+
+    .flex-container3 {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .flex-container3 div {
+        width: 30px;
+        margin: 0;
+    }
+
+    .flex-container4 {
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    .flex-container4 div {
+        width: 30px;
+        margin: 0;
+    }
+
+
+    .flex-container5 {
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .flex-container5 div {
+        width: 100px;
+    }
+</style>
+
+<body>
+
+    <div class="flexbox flex-container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+
+    <div class="flexbox flex-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+
+    <div class="flexbox flex-container4">
+        <div class="div1">1</div>
+        <div class="div2" style="font-size: 36px;">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+
+    <div class="flexbox flex-container5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+</body>
+
+</html>
