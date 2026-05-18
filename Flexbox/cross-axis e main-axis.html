@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-axis e Main-axis</title>
+</head>
+
+<style>
+    .flex-container {
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .flex-container div {
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+
+<body>
+
+    <div class="flexbox flex-container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <!-- Cross-axis e Main-axis:  o main axis sempre segue a direção dos itens, e o cross axis é sempre perpendicular a ele.
+        Como isso se conecta às propriedades CSS:
+
+    justify-content → controla o espaçamento ao longo do main axis
+    align-items → controla o alinhamento ao longo do cross axis
+    align-self → igual ao align-items, mas aplicado a um item específicoF -->
+
+    <!-- O flex-basis define o tamanho inicial de um item flex ao longo do main axis — antes de qualquer crescimento (flex-grow) ou encolhimento (flex-shrink) acontecer. 
+     Pense nele como o "ponto de partida" do item.
+     Ele define o tamanho do item antes do Flexbox distribuir o espaço restante. O que acontece depois depende de flex-grow e flex-shrink:
+        Se houver espaço sobrando, flex-grow distribui o excedente
+        Se os itens não couberem, flex-shrink encolhe proporcionalmente
+        O flex-basis é sempre o ponto de partida dessa negociação -->
+
+</body>
+
+</html>
