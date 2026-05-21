@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pr-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Alignment and Order</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .box {
+        width: 80px;
+        height: 80px;
+        background: steelblue;
+        color: white;
+    }
+
+    .especial {
+        align-self: flex-end;
+    }
+
+    /* Order: A propriedade order define a ordem visual dos elementos dentro de um container flex.
+            Self-alignment: A propriedade align-self define o alinhamento de um elemento específico dentro de um container flex.
+             */
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box especial">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+
+</html>
