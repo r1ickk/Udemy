@@ -53,7 +53,8 @@ body {
 
 .list-item__content {
     padding: 0 20px;
-    flex-grow: 1; /* Para o conteúdo ocupar o espaço restante */
+    flex-grow: 1;
+    /* Para o conteúdo ocupar o espaço restante */
 }
 
 .list-item__name {
@@ -65,4 +66,20 @@ body {
 .list-item__email {
     margin: 5px 0 0 0;
     color: #aaa;
+}
+
+.list-item:hover {
+    background-color: #e8e8e8;
+}
+
+.list-item__action {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0;
+    /* Para deixar os ícones mais claros - meche com a opacidade */
+}
+
+.list-item:hover .list-item__action {
+    opacity: 0.3; /* Para deixar os ícones mais escuros quando o item for hover */
 }
