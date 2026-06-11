@@ -5,6 +5,7 @@ body {
 }
 
 body {
+    padding: 2rem;
     background-color: aqua;
     margin: 0;
     padding: 0;
@@ -22,64 +23,50 @@ body {
     color: #385555;
 }
 
-.list-wrapper {
-    background-color: white;
-    width: 90%;
-    max-width: 500px;
-    max-height: 400px;
-    overflow-y: auto;
-    /* Para aparecer a barra de rolagem quando necessário */
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    /* Para dar um efeito de sombra */
-}
-
 .list {
+    width: 90%;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Para os itens quebrarem de linha quando necessário */
+    justify-content: center;
+    /* Para centralizar os itens horizontalmente */
+    gap: 16px;
+    /* Para adicionar um espaço entre os itens */
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    /* Remove os marcadores da lista */
 }
 
 .list-item {
-    display: flex;
-    border-bottom: 1px solid #eee;
-    padding: 16px;
+    flex-basis: 280px;
+    /* Define a largura base de cada item da lista */
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-image: url(imagens/thumb01.jpg);
+    background-size: 100%;;
+    background-repeat: no-repeat;
 }
 
 .list-item__imagem img {
-    width: 80px;
     border-radius: 50%;
-}
-
-.list-item__content {
-    padding: 0 20px;
-    flex-grow: 1;
-    /* Para o conteúdo ocupar o espaço restante */
+    width: 80px;
+    margin-top: 120px;
 }
 
 .list-item__name {
+    margin: 0;
     font-size: 24px;
     color: #385555;
-    margin: 0;
 }
 
-.list-item__email {
-    margin: 5px 0 0 0;
-    color: #aaa;
-}
-
-.list-item:hover {
-    background-color: #e8e8e8;
-}
 
 .list-item__action {
     display: flex;
-    gap: 16px;
-    align-items: center;
-    opacity: 0;
-    /* Para deixar os ícones mais claros - meche com a opacidade */
-}
-
-.list-item:hover .list-item__action {
-    opacity: 0.3; /* Para deixar os ícones mais escuros quando o item for hover */
-}
+    background-color: #e5e5e5;
+    padding: 16px;
+    justify-content: space-evenly;
+    /* justify-content: space-evenly - distribui o espaço de forma uniforme entre os itens */
+    gap: 1rem;
+    }
