@@ -1,0 +1,23 @@
+body {
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-title {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #05080a;
+    padding: 16px;
+    /* Alinhamento do header e distribuição da nav na mesma linha */
+}
