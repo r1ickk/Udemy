@@ -43,7 +43,16 @@ body {
     border-radius: 6px;
 }
 
+.header__nav a::hover {
+    text-decoration: underline;
+}
+
 a.active {
     background-color: #cbe300;
     color: #0c1014;
+    pointer-events: none;
+    /* Diz para o browser que o evento não deve ser processado - receber efeito de clique */
+    /* cursor: default; */
+    /* cursor: default - continua sendo clicável, mas não vira mãozinha. Ele continua sendo a seta padrão do mouse. */
 }
+
