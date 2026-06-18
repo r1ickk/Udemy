@@ -56,7 +56,7 @@ body {
     margin: 20px 0 40px;
     padding: 20px 30px;
 } */
- 
+
 .courses {
     display: flex;
     gap: 20px;
@@ -66,3 +66,26 @@ body {
     margin: 20px 0 40px;
     padding: 20px 30px;
 }
+
+/* .courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    background-color: white;
+    padding: 10px;
+}  */
+
+.card {
+    background-color: #333;
+} 
+
+.card img {
+    display: block;
+    width: 100%;
+} 
+
+.card p {
+    margin: 0;
+    padding: 10px;
+    color: white;
+} 
