@@ -6,4 +6,63 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image: url('../imagens/bg-2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.title {
+    color: #fff;
+    font-size: 56px;
+    text-shadow: 3px 3px 6px black;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 25px;
+    margin: 20px 0 40px;
+}
+
+/* .nav-1 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:white;
+    margin: 20px 0 40px;
+    padding: 20px 30px;
+}
+
+.nav-2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:white;
+    margin: 20px 0 40px;
+    padding: 20px 30px;
+} */
+ 
+.courses {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:white;
+    margin: 20px 0 40px;
+    padding: 20px 30px;
 }
