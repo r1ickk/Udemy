@@ -97,6 +97,10 @@ a.active {
     /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%; */
 }
 
+.preco-plano__beneficios li::marker {
+    color: #cbe300;
+}
+
 .preco-plano__botao {
     text-decoration: none;
     color: #0c1014;
@@ -107,4 +111,12 @@ a.active {
     font-weight: bold;
     padding: 16px 10px;
     text-align: center;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.preco-plano__botao:hover {
+    background-color: transparent;
+    border-color: #cbe300;
+    color: #cbe300;
 }
