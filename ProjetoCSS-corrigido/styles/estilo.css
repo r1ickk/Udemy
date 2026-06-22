@@ -1,9 +1,71 @@
 html,
 body {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    background-image: url('../imagens/bg-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.hero {
+    padding: 1px;
+
+}
+
+.hero-content {
+    margin: 100px auto 0;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+    font-size: 56px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0px;
+}
+
+.hero-content p {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    padding: 16px;
+    /* padding - Adiciona espaço dentro do nosso parágrafo, um fundo maior. */
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+    margin: auto;
+    gap: 20px;
+    background-color: hsla(0, 0%, 100%, 0.466);
+    padding: 20px;
+}
+
+.card {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    /* Transforma a imagem em um elemento de bloco */
+}
+
+.card p {
+    background-color: #393535;
+    margin: 0;
+    color: #fff;
+    padding: 10px;
 }
