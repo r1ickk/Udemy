@@ -1,0 +1,15 @@
+/* html {
+    font-size: 62.5%;
+} */
+
+b {
+    font-size: 2rem;
+    color : red;
+    /* 2 vezes o tamanho da fonte do elemento pai - fonte padrao */
+}
+
+p {
+    font-size: 2em;
+    /* 16 vezes o tamanho da fonte do elemento pai - fonte padrao */
+    /* em é sempre relativo ao tamanho da fonte do elemento pai */
+}
