@@ -12,4 +12,31 @@ p {
     font-size: 2em;
     /* 16 vezes o tamanho da fonte do elemento pai - fonte padrao */
     /* em é sempre relativo ao tamanho da fonte do elemento pai */
+    width: 15em;
+    /* Quando falamos de width - 1em vale 30px */
+    background-color: #ccc;
+}
+
+.porcentagem {
+    width: 60%;
+    height: 60%;
+    background-color: yellow;
+}
+.porcentagem p {
+    background-color: orange;
+    margin: 50px;
+    font-size: 2rem;
+    /* 2 vezes o tamanho da fonte do elemento pai - fonte padrao */
+    padding-top: 50%;
+    width: 50%;
+}
+
+.padding-em {
+    background-color: red;
+}
+
+.padding-em p {
+    background-color: transparent;
+    margin: 0;
+    padding: 3em;
 }
